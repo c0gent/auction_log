@@ -1,16 +1,27 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+# I'm gonna put this shit in the development category cause I'm crazy -NS
+group :development do
+	gem 'sqlite3', '1.3.8'
+end
+
+group :production do
+	gem 'pg', '0.15.1'
+	gem 'rails_12factor', '0.0.2'
+end
+
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# (Nick commented this crap out)YOU ARE AWESOME)(&(*^)()0:  gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '2.1.1'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
