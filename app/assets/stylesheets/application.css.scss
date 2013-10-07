@@ -1,0 +1,121 @@
+$lightGrey: #C8C8C8;
+$purps: #6600FF;
+$green: #006633;
+$black: #000000;
+
+#navBar {
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+	border-color: lightgrey;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.pageBody {
+	padding-top: 5px;
+}
+
+
+table.basicTable {
+	padding: 3px;
+	padding-left: 5px;
+	margin-top: 4px;
+	margin-left:1px;
+	margin-bottom: 3px;
+	border:0px;
+	border-color: $lightGrey;
+	border-collapse: collapse;
+}
+
+.salesTable th {
+	border-bottom: 2px solid;
+	border-color: $lightGrey;
+	text-align: left;
+}
+
+.salesTable td {
+	border-bottom:1px solid;
+	border-color: $lightGrey;
+	text-align: left;
+}
+
+.dataColumn {
+	padding-right: 20px;
+}
+
+.buttonColumn {
+	padding-right: 0px;
+}
+
+.newItemRow {
+	border-bottom:0px;
+}
+
+.navElement {
+	background-color: $lightGrey;
+	border: 2px solid;
+	border-radius: 8px;
+	border-color: $lightGrey;
+	padding-top:4px;
+	padding-bottom:5px;
+	padding-right:10px;
+	padding-left:10px;
+
+	a {
+		color: $purps;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #000000;
+	}
+}
+
+.button {
+	background-color: $lightGrey;
+	border: 2px solid;
+	border-radius: 8px;
+	border-color: $lightGrey;
+	padding-top:0px;
+	padding-bottom:1px;
+	padding-right:6px;
+	padding-left:5px;
+
+	a {
+		color: $purps;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #000000;
+	}
+}
+
+.bigbutton {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.newItemTableBottom {
+	padding-bottom: 3px;
+	padding-top: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-bottom: 0px solid;
+	border-color: $lightGrey;
+	text-align: center;
+}
+
+div.footer {
+	margin-top: 20px;
+	border-top: 2px solid;
+	border-color: $lightGrey;
+}
+
+#footerText {color: $lightGrey;}
+
+.columnRight {
+	text-align: right;
+}

@@ -1,0 +1,27 @@
+<%= form_for @item do |f| %>
+	<% if @item.errors.any? %>
+		<div id="errorExplanaation">
+			<h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved: 
+			</h2>
+			<ul>
+				<% @item.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<table>
+		<tr>
+			<td><%= f.label :'id' %></td>
+			<td><%= f.number_field :id, :readonly => true %></td>
+		</tr>
+		<tr>
+			<td><%= f.label :"Item Name" %></td>
+			<td><%= f.text_field :name, size: 30 %></td>
+		</tr>
+	</table>
+	<p>
+		<%= f.submit %> <%= button_to 'Cancel', items_path, :method => :get %>
+	</p>
+<% end %>

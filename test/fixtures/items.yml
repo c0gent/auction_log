@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  qty_sold: 1
+  highest_price: 1
+  lowest_price: 1
+  avg_price: 1
+
+two:
+  name: MyString
+  qty_sold: 1
+  highest_price: 1
+  lowest_price: 1
+  avg_price: 1

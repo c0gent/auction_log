@@ -1,0 +1,26 @@
+<div class="pageBody">
+
+	<table class='basicTable'>
+		<tr>
+			<th class='dataColumn'>Item Name</th>
+			<th class='dataColumn'>   </th>
+			<th class='buttonColumn'></th>
+			<th class='buttonColumn'></th>
+			<th class='buttonColumn'></th>
+		</tr>
+
+		<% @item.each do |item| %>
+			<tr>
+				<td class='dataColumn'><%= item.name %></td>
+				<td class='dataColumn'></th>
+				<td class='buttonColumn'><div class='button'><%= link_to 'Show', item_path(item) %></div></td>
+				<td class='buttonColumn'><div class='button'><%= link_to 'Edit', edit_item_path(item) %></div></td>
+				<td class='buttonColumn'><div class='button'><%= link_to 'Destroy', item_path(item), method: :delete, data: {confirm: 'Are you sure?' } %></div></td>
+			</tr>
+		<% end %>
+		<tr><td colspan=9><div class='newItemTableBottom'>
+			<span class='button bigbutton'><%= link_to "+ New item", new_item_path %></span>
+		</div></td></tr>
+	</table>
+	
+</div>
