@@ -1,8 +1,10 @@
 AuctionLog::Application.routes.draw do
-  get "sales_list/index"
+
   resources :sales, :items
  
-
+  match 'index', to: 'sales_list#index', via: 'get'
+  match 'sales', to: 'sales#index', via: 'get'
+  match 'items', to: 'items#index', via: 'get'
   # get "main/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
